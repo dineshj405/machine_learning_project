@@ -1,13 +1,10 @@
-import sys
-print("__________________", sys.path)
-import methods
 from flask import Flask
 
 app=Flask(__name__)
 
 
-@app.route("/",methods['GET','POST'])
-def undex():
+@app.route("/",methods=['GET','POST'])
+def index():
     return "CI-CD pipeline has been established"
 
 
